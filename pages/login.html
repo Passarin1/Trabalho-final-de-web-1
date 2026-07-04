@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | FitManager</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="auth-shell">
+      <section class="card auth-card">
+        <span class="tag">Acesso ao sistema</span>
+        <h1>Entre na sua conta</h1>
+        <p>Use seu e-mail e senha para acessar o painel do aluno ou da administração.</p>
+        <form id="login-form" class="form-stack">
+          <label>
+            E-mail
+            <input type="email" id="login-email" required />
+          </label>
+          <label>
+            Senha
+            <input type="password" id="login-password" required />
+          </label>
+          <button class="btn btn--primary" type="submit">Entrar</button>
+        </form>
+        <div class="login-examples">
+          <h3>Exemplos de acesso</h3>
+          <div class="example-card">
+            <strong>Administrador</strong>
+            <p>E-mail: admin@fitmanager.com</p>
+            <p>Senha: admin123</p>
+          </div>
+          <div class="example-card">
+            <strong>Aluno</strong>
+            <p>E-mail: aluno@fitmanager.com</p>
+            <p>Senha: aluno123</p>
+          </div>
+        </div>
+        <p class="form-link">
+          Ainda não tem conta?
+          <a href="cadastro.html">Cadastre-se aqui</a>
+        </p>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

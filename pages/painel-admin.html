@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Administrativo | FitManager</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <div id="auth-notice"></div>
+      <section id="protected-panel" class="section" data-required-role="admin">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Área administrativa</p>
+            <h1>Dashboard da academia</h1>
+          </div>
+          <a class="btn btn--secondary" href="login.html">Desconectar</a>
+        </div>
+
+        <div class="stats-grid">
+          <article class="card">
+            <h3>48</h3>
+            <p>alunos cadastrados</p>
+          </article>
+          <article class="card">
+            <h3>14</h3>
+            <p>treinos ativos</p>
+          </article>
+          <article class="card">
+            <h3>3</h3>
+            <p>planos em destaque</p>
+          </article>
+          <article class="card">
+            <h3>91%</h3>
+            <p>frequência mensal</p>
+          </article>
+        </div>
+
+        <div class="panel-grid">
+          <article class="card">
+            <h3>Cadastros recentes</h3>
+            <ul class="schedule-list">
+              <li>Julia Rocha - Plano Premium</li>
+              <li>Bruno Silva - Plano Fit</li>
+              <li>Marina Costa - Plano Essentials</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Aulas da semana</h3>
+            <ul class="schedule-list">
+              <li>Segunda: 12 aulas</li>
+              <li>Quarta: 10 aulas</li>
+              <li>Sexta: 9 aulas</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card">
+          <h3>Alunos em destaque</h3>
+          <table class="table">
+            <thead>
+              <tr><th>Nome</th><th>Plano</th><th>Status</th><th>Próximo treino</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Carlos Mendes</td><td>Fit</td><td><span class="pill success">Ativo</span></td><td>18:30 - Funcional</td></tr>
+              <tr><td>Ana Pereira</td><td>Premium</td><td><span class="pill success">Ativo</span></td><td>19:00 - Pilates</td></tr>
+              <tr><td>Lucas Nunes</td><td>Essentials</td><td><span class="pill warning">Aguardando</span></td><td>20:00 - Musculação</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

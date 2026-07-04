@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | FitManager</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="auth-shell">
+      <section class="card auth-card">
+        <h1>Cadastre-se</h1>
+        <p>Crie sua conta para acompanhar treinos e planos.</p>
+        <form id="register-form" class="form-stack">
+          <label>
+            Nome completo
+            <input type="text" id="register-name" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" id="register-email" required />
+          </label>
+          <label>
+            Senha
+            <input type="password" id="register-password" required />
+          </label>
+          <label>
+            Plano desejado
+            <select id="register-plan">
+              <option value="Musculação">Musculação</option>
+              <option value="Funcional">Funcional</option>
+              <option value="Pilates">Pilates</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" type="submit">Criar conta</button>
+        </form>
+        <p class="form-link">
+          Já possui conta?
+          <a href="login.html">Voltar para login</a>
+        </p>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
